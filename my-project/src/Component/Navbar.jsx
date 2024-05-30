@@ -10,8 +10,8 @@ function Navbar() {
                     <span className='path'>PATHSHALA</span>
                 </div>
                 <div className='home'>
-                    <a href="">Home</a>
-                    <a href="">About us</a>
+                    <a href="http://localhost:5173/">Home</a>
+                    <a href="http://localhost:5173/">About us</a>
                     <select>
                         <option>Features</option>
                         <option>College's Details</option>

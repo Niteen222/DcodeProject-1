@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from "./img1.jpeg"
 import img1 from "./img2.jpeg"
 import img2 from "./img3.jpeg"
@@ -7,16 +7,36 @@ import img4 from "./img5.jpeg"
 import img5 from "./img6.jpeg"
 
 function Banner() {
+    const [showMore, setShowMore] = useState(false);
+
+    const handleToggle = () => {
+        setShowMore(!showMore);
+    };
     return (
         <>
             <div className='banner'>
                 <div className='first'>
                     <div className='c'></div>
                     <h1 className='we'>
-                        We Help People <br /> Connect With Their <br /> Right Teachers.
+                        We help people <br />to choose their <br /> right career path
                     </h1>
                     <p className='para'>
-                        We have the right study plans for any job we will provide you  <br /> the right feture and help you connect with them <br />easily get job effectively
+                        At Decode Pathshala, we are committed to transforming education through innovation. By seamlessly blending advanced technology with pedagogical excellence, we provide interactive tools, personalized learning pathways, and immersive content experiences that engage learners worldwide. <button className='more' onClick={handleToggle}>
+
+                            {showMore ? ' ' : '...more'}</button>
+                        {showMore && (
+                            <span className="textsof">
+                                Our comprehensive offerings include Dcode 360 for the latest tech and business updates, community engagement, and insightful blogs and articles. Our guidance services provide expert career path advice, personalised counselling plans, tailored study plans, college application assistance, mock exams, and analysis of past exam data. We also offer detailed college information, including rankings, cutoff scores, predictors, comparison tables, and our unique ranking alongside the NIRF ranking. For schools, we provide data on fees, teacher qualifications, student success rates, safety measures, and city rankings. Additionally, we feature guest lecturers to enhance the learning experience. Together, let's shape the future of education at Decode Pathshala.
+                            </span>
+                        )}
+                        {showMore && (
+                            <span className="textsof">
+                                <button className='more' onClick={handleToggle}>
+
+                                    {showMore ? '...Show Less' : ''}</button>
+                            </span>
+                        )}
+
                     </p>
                     <div className='s1'>
                         <div className='help'>
@@ -29,7 +49,7 @@ function Banner() {
                         </div>
                         <div className='n'></div>
                     </div>
-                    
+
                 </div>
 
                 <div className='second'>

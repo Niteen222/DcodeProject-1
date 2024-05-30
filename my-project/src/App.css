@@ -17,6 +17,7 @@
   gap: 10px;
   cursor: pointer;
   font-weight: 900;
+
 }
 
 .logo p{
@@ -88,12 +89,10 @@
   padding: 2%;
 }
 .first{
-  /* border: 2px solid white; */
-  /* height: 30vh; */
   width: 50%;
 }
 .second{
-  /* border: 2px solid white; */
+
   height: auto;
   width: 50%;
 
@@ -137,7 +136,7 @@
   font-size: large;
   color:white;
   margin-left: 1rem;
-  margin-top: 6rem;
+  margin-top:3rem;
 
 }
 .help{
@@ -152,7 +151,7 @@
   padding: 10px 30px;
   margin-left: 1rem;
   border-radius: 30px 30px 0;
-  margin-top: 16%;
+  margin-top: 6%;
   font-size:large;
   color: rgb(19, 14, 14);
   cursor: pointer;
@@ -188,7 +187,7 @@
   padding: 10px 30px;
   margin-left: 4rem;
   border-radius: 0 30px 30px ;
-  margin-top: 16%;
+  margin-top: 6%;
   background:#505356;
   color: white;
   font-size: x-large;
@@ -210,7 +209,7 @@
   border-radius: 10px;
   rotate: 35deg;
   margin-left: 7rem;
-  margin-top: -3rem;
+  margin-top: -26rem;
 }
 
 .img7{
@@ -444,3 +443,4 @@
   border-radius: 50%;
   font-size: large;
 }
+
